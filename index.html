@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;700&display=swap" rel="stylesheet">
     <title>autumn</title>
   </head>
   <body>
@@ -43,11 +44,23 @@
         <p>テキストテキスト</p>
         <p>テキストテキスト</p>
         <p>テキストテキスト</p>
+        <h1 class="caption">更新履歴</h1>
+        <p>ブログ更新部分を押していただくとその日の記事に飛ぶことが出来ます。</p>
+        <p>20/09/02 サイトレイアウトの大幅な変更</p>
+        <p>20/08/26 <a href="/blog#blog006">ブログ更新</a></p>
+        <p>20/08/20 <a href="/blog#blog005">ブログ更新</a></p>
+        <p>20/08/19 レスポンシブ対応作業開始、<a href="/blog#blog004">ブログ更新</a></p>
+        <p>20/08/18 サイトレイアウトの大幅な変更、ポップアップの導入、<a href="/blog#blog003">ブログ更新</a></p>
+        <p>20/08/13 試験的なポップアップの導入</p>
+        <p>20/08/12 軽微な修正、<a href="/blog#blog002">ブログ更新</a></p>
+        <p>20/08/11 <a href="/blog#blog001">Blogページ設立、更新</a></p>
+        <p>20/08/04 本ページ公開</p>
+        <p>20/08/02 本ページ作成開始</p>
       </div>
       <div class="side">
         <div class="side_menu">
           <div class="profile">
-            <img src="img/profile.jpg" alt="taki" class="profile_image">
+            <a href="/profile"><img src="img/profile.jpg" alt="taki" class="profile_image"></a>
             <p>管理者:taki</p>
             <p>連絡先:takiautumn□gmail.com</p>
             <p>□を@に変更の上ご連絡をお願いします。</p>
@@ -55,21 +68,26 @@
             <p>詳細はアイコン画像をタップ。</p>
           </div>
           <ul class="menu_main">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-          <ul class="menu_link">
-            <li><a href="/">Twitter</a></li>
+            <li><a href="/">▶Home</a></li>
+            <label for="menu_about"><li><span class="about">▶About</span></li></label>
+            <input type="checkbox" id="menu_about">
+            <div class="hidden_menu">
+              <ul>
+                <li class="hidden_list"><a href="/about">▶About this site</a></li>
+                <li class="hidden_list"><a href="/profile">▶Profile</a></li>
+                <li class="hidden_list"><a href="/privacy">▶Privacy policy</a></li>
+              </ul>
+            </div>
+            <li><a href="/gallery">▶Gallery</a></li>
+            <li><a href="/blog">▶Blog</a></li>
+            <li><a href="/contact">▶Contact</a></li>
           </ul>
           <a class="twitter-timeline" data-lang="en" data-width="320" data-height="400" data-theme="dark" href="https://twitter.com/takiautumn?ref_src=twsrc%5Etfw">Tweets by takiautumn</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </div>
     <div class="footer">
-      <p>© 2020 taki</p>
+      <h1 class="copyright">© 2020 taki</p>
     </div>
   </body>
 </html>

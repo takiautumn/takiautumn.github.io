@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
   line-height: 1.7;
   background-color: #ffffff;
 }
@@ -41,6 +42,14 @@ body {
   width: 660px;
   margin-right: 20px;
 }
+.main a {
+  text-decoration: none;
+  color: #000000;
+}
+.main a:hover {
+  color: #ff0000;
+  opacity: 0.5;
+}
 .caption{
   font-size: 26px;
   margin-top: 10px;
@@ -75,6 +84,28 @@ ul {
   height: 120px;
   border-radius: 50%;
 }
+.about {
+  cursor: pointer;
+}
+.about:hover {
+  color: #ff0000;
+  opacity: 0.5;
+}
+input {
+  display: none;
+}
+.hidden_menu {
+  display: none;
+  padding-left: 1em;
+}
+#menu_about:checked + .hidden_menu {
+  display: block;
+}
 .footer {
+  height: 100px;
   text-align: center;
+}
+.copyright {
+  padding-top: 60px;
+  font-size: 20px;
 }
