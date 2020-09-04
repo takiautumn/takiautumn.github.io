@@ -50,10 +50,16 @@ body {
   color: #ff0000;
   opacity: 0.5;
 }
-.caption{
+.caption {
   font-size: 26px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.caption_mini {
+  font-size: 20px;
+}
+b {
+  color: #ff0000;
 }
 .side {
   width: 320px;
