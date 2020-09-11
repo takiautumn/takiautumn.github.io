@@ -118,6 +118,7 @@ input {
 
 @media screen and (max-width:1125px) {
   .container {
+    width: auto;
     display: block;
   }
   .main {
