@@ -116,43 +116,12 @@ input {
   font-size: 20px;
 }
 
-@media screen and (max-width:1242px) {
-  .container {
-    display: block;
-  }
-  .main {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .caption {
-    padding-left: 0px;
-  }
-  .caption_mini {
-    padding-left: 0px;
-  }
-  p:not(.header_text) {
-    padding-left: 0px;
-  }
-  .side {
-    width: 23%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .profile {
-    text-align: center;
-  }
-  .twitter-timeline {
-    display: none;
-  }
-}
-
 @media screen and (max-width:1125px) {
   .container {
     display: block;
   }
   .main {
-    width: 80%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -166,33 +135,9 @@ input {
     padding-left: 0px;
   }
   .side {
-    width: 23%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
-  }
-  .twitter-timeline {
-    display: none;
-  }
-}
-
-@media screen and (max-width:640px) {
-  .container {
-    display: block;
-  }
-  .main {
-    width: 100%;
-  }
-  .caption {
-    padding-left: 0px;
-  }
-  .caption_mini {
-    padding-left: 0px;
-  }
-  p:not(.header_text) {
-    padding-left: 0px;
-  }
-  .side {
-    width: 100%;
   }
   .twitter-timeline {
     display: none;
