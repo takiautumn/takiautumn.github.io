@@ -85,9 +85,12 @@ ul {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.profile_image {
+  text-align: center;
+}
 .profile_thumbnail {
-  width: 320px;
-  height: 320px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 .about {
