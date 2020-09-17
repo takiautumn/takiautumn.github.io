@@ -146,6 +146,10 @@ input {
   p:not(.header_text) {
     padding-left: 0px;
   }
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+  }
   .side {
     width: 70%;
     margin-left: auto;
