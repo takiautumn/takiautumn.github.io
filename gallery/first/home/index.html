@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>autumn</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <!--ヘッダーここから!-->
+    <header class="main">
+      <h1 class="header-logo"><a href="../home"><span>autumn</span></a></h1>
+      <ul>
+        <li class="header-menu"><a href="../home">Home</a></li>
+        <li class="header-menu"><a href="../about">About</a></li>
+        <li class="header-menu"><a href="../photo">Photo</a></li>
+        <li class="header-menu"><a href="../blog">Blog</a></li>
+        <li class="header-menu"><a href="../contact">Contact</a></li>
+      </ul>
+    </header>
+    <!--ヘッダーここまで!-->
+    <!--コンテンツここから!-->
+    <main class="main">
+      <article>
+        <section class="news">
+          <h1 class="caption">○更新履歴○</h1>
+          <p>20/08/13 試験的なポップアップの導入</p>
+          <p>20/08/12 軽微な修正</p>
+          <p>20/08/11 Blogページ設立、更新</p>
+          <p>20/08/04 本ページ公開</p>
+          <p>20/08/02 本ページ作成開始</p>
+        </section>
+        <section class="plans">
+          <h1 class="caption">○更新予定○</h1>
+          <p>現時点で考えているのが画像のポップアップ表示、スマホ対応です。</p>
+          <p>技術的にまだまだ拙いのでスマホ対応はかなり時間がかかりそうです。</p>
+          <p>試験的にポップアップ機能の導入をしてみました。</p>
+          <p>現段階ではHomeの最近のアップロードからのみご覧いただけます。</p>
+          <p>若干表示がおかしい部分がありますがこの状態での公開は一時的なので、<br>必ず修正いたします。もう少々お待ち下さい。</p>
+        </section>
+        <section class="text">
+          <h1 class="caption">○最近のアップロード○</h1>
+          <p>最近にアップロードされた写真です。</p>
+          <p>メニューのPhotoからすべての写真がご覧になれます。</p>
+          <p>クリックするとポップアップ表示されます。</p>
+          <p>×ボタンあるいは枠外をクリックでポップアップは閉じられます。</p>
+          <p>ポップアップ内の画像をクリックすると本来のサイズでご覧いただけます。</p>
+        </section>
+        <section class="image">
+          <div class="popup-wrap">
+            <input id="pop" type="checkbox">
+            <div class="popup-overlay">
+              <label for="pop" class="popup-trigger"></label>
+              <div class="popup-content">
+                <label for="pop" class="close-btn">×</label>
+                <p><a href="../img/032.jpg"><img src="../img/032.jpg" width="50%" height="50%" class="popup-image"></a></p>
+              </div>
+            </div>
+          </div>
+          <label for="pop" class="open-btn"><img src="../img/032.jpg" width="120" height="120"></label>
+          <div class="popup-wrap">
+            <input id="pop2" type="checkbox">
+            <div class="popup-overlay">
+              <label for="pop2" class="popup-trigger"></label>
+              <div class="popup-content">
+                <label for="pop2" class="close-btn">×</label>
+                <p><a href="../img/031.jpg"><img src="../img/031.jpg" width="50%" height="50%" class="popup-image"></a></p>
+              </div>
+            </div>
+          </div>
+          <label for="pop2" class="open-btn"><img src="../img/031.jpg" width="120" height="120"></label>
+          <div class="popup-wrap">
+            <input id="pop3" type="checkbox">
+            <div class="popup-overlay">
+              <label for="pop3" class="popup-trigger"></label>
+              <div class="popup-content">
+                <label for="pop3" class="close-btn">×</label>
+                <p><a href="../img/030.jpg"><img src="../img/030.jpg" width="50%" height="50%" class="popup-image"></a></p>
+              </div>
+            </div>
+          </div>
+          <label for="pop3" class="open-btn"><img src="../img/030.jpg" width="120" height="120"></label>
+          <div class="popup-wrap">
+            <input id="pop4" type="checkbox">
+            <div class="popup-overlay">
+              <label for="pop4" class="popup-trigger"></label>
+              <div class="popup-content">
+                <label for="pop4" class="close-btn">×</label>
+                <p><a href="../img/029.jpg"><img src="../img/029.jpg" width="50%" height="50%" class="popup-image"></a></p>
+              </div>
+            </div>
+          </div>
+          <label for="pop4" class="open-btn"><img src="../img/029.jpg" width="120" height="120"></label>
+          <div class="popup-wrap">
+            <input id="pop5" type="checkbox">
+            <div class="popup-overlay">
+              <label for="pop5" class="popup-trigger"></label>
+              <div class="popup-content">
+                <label for="pop5" class="close-btn">×</label>
+                <p><a href="../img/028.jpg"><img src="../img/028.jpg" width="50%" height="50%" class="popup-image"></a></p>
+              </div>
+            </div>
+          </div>
+          <label for="pop5" class="open-btn"><img src="../img/028.jpg" width="120" height="120"></label>
+        </section>
+      </article>
+    </main>
+    <!--コンテンツここまで!-->
+    <!--フッターここから!-->
+    <footer class="main">
+      <ol class="footer-contact">
+        <li>管理者:taki</li>
+        <li>連絡先:takiautumn☆gmail.com</li>
+        <li>ご連絡の際は☆を@に置き換えてください。</li>
+      </ol>
+      <h1 class="copyright">© 2020 taki</h1>
+    </footer>
+    <!--フッターここまで!-->
+  </body>
+</html>

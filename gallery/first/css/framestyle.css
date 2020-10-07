@@ -1,0 +1,21 @@
+/*リセットCSS*/
+*{
+  padding: 0px;
+  margin: 0px;
+}
+/*背景、フレームの位置設定*/
+body {
+  background-image: url(../img/back.jpg);
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  max-width: 720px;
+}
+/*フレームを円にする設定*/
+iframe {
+  width: 720px !important;
+  height: 720px !important;
+  border-radius: 50%;
+  border: 6px dotted rgba(0, 0, 0, 0.5);
+  scrollbar-width: none;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoat" content="width=device-width, initialscale=1">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="side">
+        <a href="/"><img src="img/profile.jpg" class="profile_img"></a>
+        <h1 class="logo"><a href="/">Profile</a></h1>
+        <div class="menu">
+          <label for="btn"><h1 class="caption"><span class="cap_hover">About me</span></h1></label>
+          <h1 class="separate">｜</h1>
+          <label for="btn2"><h1 class="caption"><span class="cap_hover">News</span></h1></label>
+          <h1 class="separate">｜</h1>
+          <label for="btn3"><h1 class="caption"><span class="cap_hover">Links</span></h1></label>
+          <h1 class="separate">｜</h1>
+          <label for="btn4"><h1 class="caption"><span class="cap_hover">How to Use</span></h1></label>
+        </div>
+        <p class="side_text">About meなどの見出しをクリックすると右側にコンテンツが表示されます。</p>
+      </div>
+      <div class="main">
+        <div class="about">
+          <input type="radio" id="btn" name="tab" checked="checked">
+          <div class="hidden_contents" id="btn">
+            <h1 class="caption">About me</h1>
+            <p>ここにプロフィールを入れてください。</p>
+            <p>例えば、名前や好きなもの、趣味など。</p>
+            <p>書きたいことを好きなだけ書いてください。</p>
+            <p>例</p>
+            <p>犬です。犬種はチワワです。</p>
+            <p>趣味は散歩、ランニング、ギターです。</p>
+            <p>毎日朝晩の散歩が1日の1番の楽しみと言っても過言ではないですね。</p>
+            <p>飼い主が最近乗り気じゃないのが悩み。</p>
+            <p>ギターはアコギをやっています。コードは押さえられません。</p>
+            <p>好きなものはスペアリブ、手羽元、洋服です。</p>
+            <p>肉はやっぱり骨付きがいいですね。かぶりつきたいです。</p>
+            <p>昔は服を着ていなかったんですけど、もう今じゃ欠かせないですね。</p>
+            <p>飼い主とはセンスが合わないので最近は自分で選んでいます。</p>
+            <p>スポーティーなのが好き。</p>
+            <p>よろしくお願いしますワン(申し訳程度の犬要素)！</p>
+            <p>こんな感じで適当に書いてみてください。</p>
+          </div>
+        </div>
+        <div class="news">
+          <input type="radio" id="btn2" name="tab">
+          <div class="hidden_contents" id="btn2">
+            <h1 class="caption">News</h1>
+            <p>更新履歴やお知らせを書いてください。</p>
+            <p>例</p>
+            <p>20/01/02 プロフィールを一部修正しました</p>
+            <p>20/01/01 サイトを公開しました</p>
+          </div>
+        </div>
+        <div class="links">
+          <input type="radio" id="btn3" name="tab">
+          <div class="hidden_contents" id="btn3">
+            <h1 class="caption">Links</h1>
+            <p>自分のSNSなどのリンクを貼るスペースです。</p>
+            <p>例</p>
+            <h1 class="link_text"><a href="https://www.google.com/">Google</a></h1>
+            <p>よくお世話になっている検索エンジンです。</p>
+            <p>なんでも検索できて便利。</p>
+          </div>
+        </div>
+        <div class="use">
+          <input type="radio" id="btn4" name="tab">
+          <div class="hidden_contents" id="btn4">
+            <h1 class="caption">How to Use</h1>
+            <p>このテンプレートの使い方についてちょちょいと書いておきます。</p>
+            <p>1ページで完結するタイプのテンプレートです。プロフィールサイトなどの使用を想定しています。</p>
+            <p>画像と文章を差し替えるだけで簡単にプロフィールサイトが作成できます。</p>
+            <p>使用の際はこのHow to Useの部分はいらない部分なので削除してお使いください。</p>
+            <p>CSSの「#btn4:checked + #btn4」この部分も削除してください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h1 class="copyright">© 2020 your name</h1>
+    </div>
+  </body>
+</html>

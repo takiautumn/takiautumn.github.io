@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  line-height: 1.7;
+  background-color: #dddddd;
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.side {
+  width: 200px;
+  margin-right: 30px;
+  display: block;
+}
+
+.profile_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #88bbaa;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo a:hover {
+  opacity: 0.5;
+}
+
+label{
+  display:block;
+}
+
+label:hover{
+  opacity: 0.5;
+  background-color: #88bbaa;
+}
+
+.caption {
+  font-size: 24px;
+}
+
+.cap_hover:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.separate {
+  display: none;
+}
+
+.main {
+  width: 570px;
+  display: block;
+  overflow: auto;
+}
+
+.hidden_contents {
+  display: none;
+}
+
+input {
+  display:none;
+}
+
+#btn:checked + #btn,#btn2:checked + #btn2,#btn3:checked + #btn3,#btn4:checked + #btn4 {
+  display: block;
+}
+
+p {
+  font-size: 17px;
+}
+
+.link_text {
+  font-size: 20px;
+}
+
+.link_text a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.link_text a:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  text-align: center;
+}
+
+.copyright {
+  font-size: 17px;
+}
+
+@media screen and (max-width:1125px) {
+  .container {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+  }
+  .side {
+    display: flex;
+    height: 60px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile_img {
+    width: 60px;
+    height: 60px;
+  }
+  .logo {
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+  }
+  .menu {
+    display: flex;
+    color: #555555;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .menu .caption {
+    font-size: 16px;
+  }
+  .separate {
+    display: block;
+    font-size: 16px;
+  }
+  .side_text {
+    display: none;
+  }
+  .main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
