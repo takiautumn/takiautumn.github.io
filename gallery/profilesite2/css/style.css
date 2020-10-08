@@ -126,7 +126,7 @@ p {
   .side {
     display: flex;
     height: 60px;
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -135,24 +135,23 @@ p {
     height: 60px;
   }
   .logo {
-    font-size: 20px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .menu {
     display: flex;
     color: #555555;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: auto;
     margin-bottom: auto;
   }
-  .menu .caption {
-    font-size: 16px;
-  }
   .separate {
     display: block;
-    font-size: 16px;
+    font-size: 24px;
+  }
+  label:hover {
+    background-color: transparent;
   }
   .side_text {
     display: none;
