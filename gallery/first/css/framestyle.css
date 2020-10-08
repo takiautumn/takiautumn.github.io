@@ -1,21 +1,40 @@
-/*リセットCSS*/
-*{
+@font-face {
+  font-family: "HuiFont29";
+  src: url(../font/HuiFont29.woff) format("woff");
+}
+
+* {
   padding: 0px;
   margin: 0px;
 }
-/*背景、フレームの位置設定*/
 body {
-  background-image: url(../img/back.jpg);
-  width: 50%;
-  height: 50%;
-  margin: 0 auto;
-  max-width: 720px;
+  font-family: "HuiFont29",sans-serif;
+  line-height: 1.7;
 }
-/*フレームを円にする設定*/
-iframe {
-  width: 720px !important;
-  height: 720px !important;
+
+.background {
+  background-image: url(../img/back.jpg);
+}
+.contents {
+  width: 720px;
+  height: 720px;
   border-radius: 50%;
   border: 6px dotted rgba(0, 0, 0, 0.5);
   scrollbar-width: none;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+.header {
+  text-align: center;
+}
+.header-menu{
+  display: flex;
+}
+.main{
+  text-align: center;
+}
+.footer {
+  text-align: center;
 }
