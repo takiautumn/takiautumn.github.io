@@ -1,76 +1,86 @@
-/*フォント読み込み*/
 @font-face {
   font-family: "HuiFont29";
   src: url(../font/HuiFont29.woff) format("woff");
 }
-/*リセットCSSなど*/
+
 * {
   padding: 0px;
   margin: 0px;
 }
-/*全体のフォント、行間、背景色設定*/
+
 body {
-  font-family: "HuiFont29", sans-serif;
+  font-family: "HuiFont29",sans-serif;
   line-height: 1.7;
+}
+
+.background {
+  background-image: url(../img/back.jpg);
+}
+
+.contents {
+  width: 720px;
+  height: 720px;
+  border-radius: 50%;
+  border: 6px dotted rgba(0, 0, 0, 0.5);
+  scrollbar-width: none;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
 }
-/*フレーム内のスクロールバー非表示*/
-body::-webkit-scrollbar {
-  display: none;
-}
-/*ヘッダー全体のおおまかな設定*/
-header {
+
+.header {
+  text-align: center;
   height: 108px;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
-/*ヘッダーロゴの設定*/
+
 .header-logo {
   font-size: 36px;
   text-align: center;
   margin-bottom: 6px;
 }
-/*ヘッダーロゴ下の線*/
-span {
-  padding: 16px;
-  border-bottom: 3px solid #000000;
-}
-/*全体の中央寄せ*/
-.main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
-}
-/*リストの点関係、メニューの中央寄せもここ*/
+
 ul {
   position: relative;
   left: 23%;
-  float:left;
   list-style-type: none;
 }
-/*メニューの設定*/
-.header-menu {
+
+.header-menu{
   font-size: 24px;
   float: left;
   padding: 6px;
   height: 24px;
 }
-/*リンクの設定*/
+
+.main{
+  text-align: center;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a:not(.img) {
   text-decoration: none;
   color: #000000;
 }
-/*リンクのホバー時の設定*/
+
 a:hover:not(.img) {
   color: #ff0000;
   opacity: 0.5;
 }
-/*ポップアップの設定*/
+
 .popup-wrap {
   float: left;
 }
+
 .popup-wrap input {
   display: none;
 }
-/*ポップアップの背景設定*/
+
 .popup-overlay {
   display: flex;
   justify-content: center;
@@ -79,13 +89,12 @@ a:hover:not(.img) {
   top: 0;
   left: 0;
   z-index: 9999;
-  width: 720px;
-  height: 720px;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity 0.5s, transform 0s 0.5s;
   transform: scale(0);
-  border-radius: 50%;
 }
 
 .popup-trigger {
@@ -94,7 +103,7 @@ a:hover:not(.img) {
   height: 100%;
   border-radius: 50%;
 }
-/*ポップアップコンテンツの設定*/
+
 .popup-content {
   position: relative;
   align-self: center;
@@ -106,7 +115,7 @@ a:hover:not(.img) {
   line-height: 1.4em;
   transition: 0.5s;
 }
-/*閉じるボタンの設定*/
+
 .close-btn {
   position: absolute;
   top: 14px;
@@ -114,7 +123,7 @@ a:hover:not(.img) {
   font-size: 30px;
   cursor: pointer;
 }
-/*閉じるボタンのホバー設定*/
+
 .close-btn:hover {
   color: #ff0000;
   opacity: 0.5;
@@ -125,7 +134,7 @@ a:hover:not(.img) {
   transform: scale(1);
   transition: opacity 0.5s;
 }
-/*開くボタンの設定*/
+
 .open-btn {
   position: relative;
   overflow: hidden;
@@ -146,64 +155,51 @@ a:hover:not(.img) {
   opacity: 0.5;
 
 }
-/*開くボタンのホバー設定*/
+
 .open-btn:hover{
     transition: .3s ease;
     opacity: 1.0;
 }
-/*画像透過用の設定*/
+
 .img {
   text-decoration: none;
   opacity: 0.5;
 }
-/*画像ホバー時の設定*/
+
 .img:hover {
   opacity: 1.0;
 }
-/*区切りごとのスペース設定*/
-section {
-  margin: 20px 0px;
-}
-/*注意書きの色など*/
+
 b {
   color: #ff0000;
 }
-/*画像の中央揃え*/
+
 .image {
   text-align: center;
 }
-/*サムネイルを円で表示するための設定*/
+
 img:not(.popup-image) {
   border-radius: 50%;
 }
-/*見出しのサイズ、中央揃え設定*/
+
 .caption {
   font-size: 24px;
   text-align: center;
 }
-/*内容の中央寄せ*/
-.contact {
-  text-align: center;
-  list-style-type: none;
-}
-/*テキストの中央寄せ*/
-p {
-  text-align: center;
-}
-/*フッター全体の大まかな設定*/
-footer {
+
+.footer {
   height: 200px;
   background-color: #000000;
   color: #ffffff;
 }
-/*フッターのリスト設定*/
+
 .footer-contact {
   padding-top: 20px;
   list-style-type: none;
   height: 100px;
   text-align: center;
 }
-/*コピーライト*/
+
 .copyright {
   font-size: 14px;
   text-align: center;
